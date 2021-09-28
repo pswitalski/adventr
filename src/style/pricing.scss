@@ -7,16 +7,36 @@
     align-items: center;
     text-align: center;
 
+    @media (min-width: 800px) {
+        margin-top: 30px;
+    }
+
+    // mobile
+
     &__h1 {
         font-size: 24px;
+
+        @media (min-width: 800px) {
+            font-size: 72px;
+            margin: 0 20px;
+        }
     }
 
     &__p {
         font-size: 8px;
+
+        @media (min-width: 800px) {
+            font-size: 26px;
+            margin: 0 20px;
+        }
     }
 
     &__data-mobile {
         width: 100%;
+
+        @media (min-width: 800px) {
+            display: none;
+        }
     }
 
     &__mobile-h1 {
@@ -52,5 +72,51 @@
     &__mobile-price-addnotation {
         font-size: 8px !important;
         color: $orange;
+    }
+
+
+    // desktop
+
+    &__data-desktop {
+        width: 100%;
+        max-width: 1000px;
+
+        @media (max-width: 799px) {
+            display: none;
+        }
+    }
+
+    &__desktop-table {
+        width: 100%;
+        font-size: 40px;
+        border-style: hidden;
+        border-collapse: collapse;
+    }
+
+    &__desktop-table td,
+    &__desktop-table th {
+        border: 2px solid $table-background-color;
+    }
+
+    &__desktop-table tr {
+        height: 160px;
+        background-color: white;
+    }
+
+    &__desktop-table th {
+        font-size: 54px;
+    }
+
+    &__desktop-table span {
+        color: $orange;
+    }
+
+    &__desktop-description {
+        font-size: 20px;
+    }
+
+    &__desktop-orange {
+        color: $orange;
+        font-size: 20px;
     }
 }
