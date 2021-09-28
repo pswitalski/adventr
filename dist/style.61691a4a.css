@@ -1,0 +1,25 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/Background-mobile.65a60150.png");
+  background-size: cover;
+  background-position: bottom center;
+}
+@media (min-width: 400px) {
+  .home {
+    background-image: url("/Background.c951b48f.png");
+    background-size: cover;
+    background-position: center 80%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hammersmith One", sans-serif;
+}
+
+/*# sourceMappingURL=/style.61691a4a.css.map */
