@@ -1,0 +1,56 @@
+@import './theme.scss';
+
+.pricing {
+    color: $font-color-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__h1 {
+        font-size: 24px;
+    }
+
+    &__p {
+        font-size: 8px;
+    }
+
+    &__data-mobile {
+        width: 100%;
+    }
+
+    &__mobile-h1 {
+        font-size: 42px;
+        margin-top: 26px;
+    }
+
+    &__mobile-h1>span {
+        color: $orange;
+    }
+
+    &__mobile-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__mobile-table tr {
+        height: 40px;
+    }
+
+    &__mobile-table tr:nth-child(even) {
+        background-color: $table-background-color;
+    }
+
+    &__mobile-table p {
+        font-size: 16px;
+    }
+
+    &__mobile-description {
+        font-size: 8px !important;
+    }
+
+    &__mobile-price-addnotation {
+        font-size: 8px !important;
+        color: $orange;
+    }
+}
