@@ -149,6 +149,8 @@ body {
     text-align: left;
     align-items: flex-start;
     padding: 40px;
+    justify-content: space-between;
+    top: 50%;
   }
 }
 @media (min-width: 400px) {
@@ -167,6 +169,11 @@ body {
 .home__text {
   font-size: 18px;
 }
+@media (min-width: 400px) {
+  .home__text {
+    margin-top: 20px;
+  }
+}
 .home__content-button {
   font-size: 24px;
   text-transform: capitalize;
@@ -178,7 +185,12 @@ body {
   transition: background-color 0.2s linear, font-size 0.2s linear;
   color: #fff;
   background-color: #E59945;
-  transform: font-size 0.2s linear, background-color 0.2s linear;
+  flex-shrink: 0;
+}
+@media (min-width: 400px) {
+  .home__content-button {
+    margin-top: 20px;
+  }
 }
 .home__content-button:hover {
   background-color: #ff951c;

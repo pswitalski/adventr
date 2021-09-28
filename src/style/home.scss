@@ -151,6 +151,8 @@
             text-align: left;
             align-items: flex-start;
             padding: 40px;
+            justify-content: space-between;
+            top: 50%;
         }
     }
 
@@ -173,6 +175,10 @@
 
     &__text {
         font-size: 18px;
+
+        @media (min-width: 400px) {
+            margin-top: 20px;
+        }
     }
 
     &__content-button {
@@ -180,7 +186,11 @@
 
         color: $font-color-light;
         background-color: $orange-btn;
-        transform: font-size 0.2s linear, background-color 0.2s linear;
+        flex-shrink: 0;
+
+        @media (min-width: 400px) {
+            margin-top: 20px;
+        }
     }
 
     &__content-button:hover {
