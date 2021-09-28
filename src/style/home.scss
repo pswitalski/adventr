@@ -34,6 +34,7 @@
         align-items: center;
         justify-content: space-between;
         max-width: 800px;
+        position: relative;
 
         @media(max-width: 849px) {
             display: none;
@@ -64,6 +65,7 @@
         color: $font-color-light;
         background-color: $dark-btn;
         position: relative;
+        z-index: 2;
     }
 
     &__signin:hover {
@@ -194,6 +196,54 @@
     }
 
     &__content-button:hover {
+        background-color: $orange-btn-hover;
+        font-size: 26px;
+    }
+
+
+    &__form {
+        background-color: $font-color-dark;
+        position: absolute;
+        display: flex;
+        transform: scaleY(0);
+        transform-origin: top;
+        flex-direction: column;
+        align-items: center;
+        top: 29px;
+        width: 212px;
+        height: 300px;
+        right: 0;
+        padding: 60px 10px 10px;
+        z-index: 1;
+        border-bottom-left-radius: 29px;
+        border-bottom-right-radius: 29px;
+        transition: transform 0.3s linear;
+    }
+
+    &__form--active {
+        display: flex;
+        transform: scaleY(1);
+    }
+
+    &__input {
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        border: none;
+        margin-top: 6px;
+        padding: 0 10px;
+    }
+
+    &__form-button {
+        @include button;
+
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        background-color: $orange-btn;
+    }
+
+    &__form-button:hover {
         background-color: $orange-btn-hover;
         font-size: 26px;
     }

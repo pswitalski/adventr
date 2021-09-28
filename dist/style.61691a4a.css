@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: space-between;
   max-width: 800px;
+  position: relative;
 }
 @media (max-width: 849px) {
   .home__controls {
@@ -75,6 +76,7 @@ body {
   color: #fff;
   background-color: #374C6B;
   position: relative;
+  z-index: 2;
 }
 .home__signin:hover {
   background-color: #5778ab;
@@ -193,6 +195,54 @@ body {
   }
 }
 .home__content-button:hover {
+  background-color: #ff951c;
+  font-size: 26px;
+}
+.home__form {
+  background-color: #374C6B;
+  position: absolute;
+  display: flex;
+  transform: scaleY(0);
+  transform-origin: top;
+  flex-direction: column;
+  align-items: center;
+  top: 29px;
+  width: 212px;
+  height: 300px;
+  right: 0;
+  padding: 60px 10px 10px;
+  z-index: 1;
+  border-bottom-left-radius: 29px;
+  border-bottom-right-radius: 29px;
+  transition: transform 0.3s linear;
+}
+.home__form--active {
+  display: flex;
+  transform: scaleY(1);
+}
+.home__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 6px;
+  padding: 0 10px;
+}
+.home__form-button {
+  font-size: 24px;
+  text-transform: capitalize;
+  height: 58px;
+  width: 212px;
+  border-radius: 29px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s linear, font-size 0.2s linear;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #E59945;
+}
+.home__form-button:hover {
   background-color: #ff951c;
   font-size: 26px;
 }
