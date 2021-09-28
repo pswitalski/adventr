@@ -8,4 +8,5 @@ body {
     font-family: 'Hammersmith One', sans-serif;
 }
 
-@import url('./home.scss');
+@import './theme.scss';
+@import './home.scss';
