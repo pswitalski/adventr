@@ -10,6 +10,32 @@ signInButton.addEventListener('click', () => {
     dropDown.classList.toggle('home__form--active');
 })
 
+// mobile nav
+
+const navButton = document.querySelector('.home__menu-open');
+const closeButton = document.querySelector('.mobile-nav__close-button');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileLinks = document.querySelectorAll('.mobile-nav__link');
+
+navButton.addEventListener('click', () => {
+    mobileNav.classList.add('mobile-nav--active')
+})
+
+closeButton.addEventListener('click', () => {
+    mobileNav.classList.remove('mobile-nav--active');
+})
+
+mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileNav.classList.remove('mobile-nav--active');
+    })
+})
+
+window.addEventListener('resize', () => {
+    mobileNav.classList.remove('mobile-nav--active');
+})
+
+
 // animations
 
 gsap.registerPlugin(ScrollTrigger);
