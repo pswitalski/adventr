@@ -247,4 +247,16 @@
         background-color: $orange-btn-hover;
         font-size: 26px;
     }
+
+    &__bird-container {
+        position: absolute;
+        top: 15%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__bird-image {}
 }

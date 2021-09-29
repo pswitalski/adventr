@@ -4,6 +4,9 @@
     color: $font-color-dark;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
 
     @media (max-width: 800px) {
         height: fit-content;
