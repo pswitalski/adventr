@@ -1,6 +1,11 @@
 .lake {
 
+    & picture {
+        height: fit-content;
+    }
+
     &__image {
         width: 100%;
+        display: block;
     }
 }
